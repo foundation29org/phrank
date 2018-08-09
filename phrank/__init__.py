@@ -71,7 +71,6 @@ class Phrank:
 
     def rank_genes(self, patient_genes, patient_phenotypes, normalized=False, baseline=False):
         gene_scores = []
-        print self._gene_and_disease
         if self._gene_and_disease:
             gene_scores = self.rank_genes_using_disease(patient_genes, patient_phenotypes, normalized=normalized, baseline=baseline)
         else:
