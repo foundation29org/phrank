@@ -1,6 +1,6 @@
 from collections import defaultdict
 import math
-from utils import load_maps, load_term_hpo, closure, load_disease_gene, compute_gene_disease_pheno_map
+from .utils import load_maps, load_term_hpo, closure, load_disease_gene, compute_gene_disease_pheno_map
 
 class Phrank:
     @staticmethod
