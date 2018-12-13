@@ -8,7 +8,7 @@ class Phrank:
         information_content, marginal_information_content = {}, {}
         annotatedGeneCt = 0
         associated_phenos = defaultdict(set)
-        for gene, phenos in annotations_map.iteritems():
+        for gene, phenos in annotations_map.items():
             annotatedGeneCt += 1
             all_ancestors = closure(phenos, child_to_parent_map)
 

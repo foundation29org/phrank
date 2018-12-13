@@ -40,7 +40,7 @@ def get_all_ancestors(hpo_term, child_to_parent_map):
 
 def compute_gene_disease_pheno_map(disease_gene_map, disease_pheno_map):
     gene_pheno_map = defaultdict(set)    
-    for disease, genes in disease_gene_map.iteritems():
+    for disease, genes in disease_gene_map.items():
         phenos = disease_pheno_map.get(disease)
         for gene in genes:
             for pheno in phenos:
